@@ -1,0 +1,97 @@
+@import "../../style/_mixins.scss";
+
+.promo-section {
+	@include padTopBottom;
+}
+
+.card-wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: var(--gap);
+
+	.cards-container {
+		margin: 0 auto;
+		justify-self: center;
+		display: flex;
+		flex-direction: column;
+		row-gap: 1.25rem;
+		align-items: start;
+		width: 15.9375rem;
+	}
+	.img-wrapper img {
+		width: 100%;
+	}
+	.info-link {
+		display: flex;
+		align-items: center;
+		column-gap: 0.3125rem;
+		font-weight: 400;
+		font-size: 1.25rem;
+		color: var(--button);
+		cursor: pointer;
+		transition: color 0.3s ease, background-color 0.3s ease, fill 0.3s;
+		-webkit-transition: color 0.3s ease, background-color 0.3s ease, fill 0.3s;
+		-moz-transition: color 0.3s ease, background-color 0.3s ease, fill 0.3s;
+		-ms-transition: color 0.3s ease, background-color 0.3s ease, fill 0.3s;
+		-o-transition: color 0.3s ease, background-color 0.3s ease, fill 0.3s;
+	}
+
+	.info-link:hover {
+		color: var(--active);
+	}
+
+	.info-link:focus-visible {
+		outline: none;
+		background-color: var(--focus);
+	}
+
+	.info-link:active {
+		color: var(--active);
+	}
+	.link-arrow svg {
+		fill: var(--hover);
+		&:hover {
+			fill: var(--active);
+		}
+	}
+}
+
+.info-wrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+
+	.cards-title {
+		font-weight: 400;
+		font-size: 1.875rem;
+		color: var(--title-color);
+	}
+	.info-circular {
+		font-size: 0.875rem;
+		color: var(--circular-color);
+	}
+	.info-description {
+		font-size: 1.125rem;
+		line-height: 170%;
+		color: var(--text);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.promo-section {
+		padding-top: 3.75rem;
+		padding-bottom: 3.75rem;
+	}
+	.card-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.card-wrapper {
+		grid-template-columns: 1fr;
+	}
+	.card-title {
+		font-size: 1.5rem;
+	}
+}
