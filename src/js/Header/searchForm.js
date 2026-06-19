@@ -15,17 +15,17 @@ const formFn = () => {
 
 	const input = document.createElement("input");
 	input.classList.add("search-input");
-	input.placeholder="Найти";
-	input.type="text";
+	input.placeholder = "Найти";
+	input.type = "text";
 
 	const searchButton = document.createElement("a");
-	searchButton.href="#";
+	searchButton.href = "#";
 	searchButton.classList.add("search-button");
 	searchButton.innerHTML = searchSvg;
 
 	const closeSearch = document.createElement("button");
 	closeSearch.classList.add("close-btn");
-	closeSearch.innerHTML= closeBtn;
+	closeSearch.innerHTML = closeBtn;
 
 	form.insertAdjacentElement("afterbegin", input);
 	form.insertAdjacentElement("afterbegin", searchButton);
@@ -38,15 +38,15 @@ const formFn = () => {
 
 	const openForm = () => {
 		formContainer.classList.add("active");
-		if(width > break_point) {
+		if (width > break_point) {
 			nav.classList.add("header__nav---hidden");
-		} else  nav.classList.remove("header__nav---hidden");
+		} else nav.classList.remove("header__nav---hidden");
 	};
 
 	const close = (e) => {
 		e.preventDefault();
 		formContainer.classList.remove("active");
-		if(width > break_point)
+		if (width > break_point)
 			nav.classList.remove("header__nav---hidden");
 
 	};

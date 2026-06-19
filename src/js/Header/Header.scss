@@ -34,23 +34,14 @@
 	height: 3px;
 	left: 5px;
 	background-color: var(--text-primary);
-	transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
-	-webkit-transition: transform 0.3s ease, opacity 0.3s ease,
-		background-color 0.3s ease;
-	-moz-transition: transform 0.3s ease, opacity 0.3s ease,
-		background-color 0.3s ease;
-	-ms-transition: transform 0.3s ease, opacity 0.3s ease,
-		background-color 0.3s ease;
-	-o-transition: transform 0.3s ease, opacity 0.3s ease,
+	transition:
+		transform 0.3s ease,
+		opacity 0.3s ease,
 		background-color 0.3s ease;
 }
 
 .header.open .header__burger-btn span:nth-child(1) {
 	transform: translateY(0) rotate(-45deg);
-	-webkit-transform: translateY(0) rotate(-45deg);
-	-moz-transform: translateY(0) rotate(-45deg);
-	-ms-transform: translateY(0) rotate(-45deg);
-	-o-transform: translateY(0) rotate(-45deg);
 }
 
 .header.open .header__burger-btn span:nth-child(2) {
@@ -59,26 +50,14 @@
 
 .header.open .header__burger-btn span:nth-child(3) {
 	transform: translateY(0) rotate(45deg);
-	-webkit-transform: translateY(0) rotate(45deg);
-	-moz-transform: translateY(0) rotate(45deg);
-	-ms-transform: translateY(0) rotate(45deg);
-	-o-transform: translateY(0) rotate(45deg);
 }
 
 .header__burger-btn span:nth-child(1) {
 	transform: translateY(-10px);
-	-webkit-transform: translateY(-10px);
-	-moz-transform: translateY(-10px);
-	-ms-transform: translateY(-10px);
-	-o-transform: translateY(-10px);
 }
 
 .header__burger-btn span:nth-child(3) {
 	transform: translateY(10px);
-	-webkit-transform: translateY(10px);
-	-moz-transform: translateY(10px);
-	-ms-transform: translateY(10px);
-	-o-transform: translateY(10px);
 }
 
 .header__nav---hidden {
@@ -107,11 +86,9 @@
 	text-decoration: none;
 	font-weight: 400;
 	font-size: 20px;
-	transition: color 0.3s ease, background-color 0.3s ease;
-	-webkit-transition: color 0.3s ease, background-color 0.3s ease;
-	-moz-transition: color 0.3s ease, background-color 0.3s ease;
-	-ms-transition: color 0.3s ease, background-color 0.3s ease;
-	-o-transition: color 0.3s ease, background-color 0.3s ease;
+	transition:
+		color 0.3s ease,
+		background-color 0.3s ease;
 }
 
 .nav__link:hover {
@@ -137,10 +114,6 @@
 .header-svg {
 	stroke: var(--text-primary);
 	transition: stroke 0.3s ease;
-	-webkit-transition: stroke 0.3s ease;
-	-moz-transition: stroke 0.3s ease;
-	-ms-transition: stroke 0.3s ease;
-	-o-transition: stroke 0.3s ease;
 }
 
 .header-svg:hover {
@@ -149,10 +122,6 @@
 
 .icon__link {
 	transition: background-color 0.3s ease;
-	-webkit-transition: background-color 0.3s ease;
-	-moz-transition: background-color 0.3s ease;
-	-ms-transition: background-color 0.3s ease;
-	-o-transition: background-color 0.3s ease;
 }
 
 .search__btn {
@@ -216,10 +185,6 @@
 				fill: #d1d1e5;
 				stroke: #4c5866;
 				transition: fill 0.3s;
-				-webkit-transition: fill 0.3s;
-				-moz-transition: fill 0.3s;
-				-ms-transition: fill 0.3s;
-				-o-transition: fill 0.3s;
 
 				&:hover {
 					fill: var(--hover);
@@ -290,15 +255,7 @@
 
 	.header.open .header__nav {
 		transform: translateX(100%);
-		-webkit-transform: translateX(100%);
-		-moz-transform: translateX(100%);
-		-ms-transform: translateX(100%);
-		-o-transform: translateX(100%);
 		transition: transform 0.3s ease-in-out;
-		-webkit-transition: transform 0.3s ease-in-out;
-		-moz-transition: transform 0.3s ease-in-out;
-		-ms-transition: transform 0.3s ease-in-out;
-		-o-transition: transform 0.3s ease-in-out;
 	}
 
 	.header__burger-btn {
@@ -317,15 +274,9 @@
 		background-color: var(--section-bg);
 		padding-top: 6.9375rem;
 		padding-left: 0.625rem;
-		transition: transform 0.3s ease, opacity 0.3s ease,
-			background-color 0.3s ease;
-		-webkit-transition: transform 0.3s ease, opacity 0.3s ease,
-			background-color 0.3s ease;
-		-moz-transition: transform 0.3s ease, opacity 0.3s ease,
-			background-color 0.3s ease;
-		-ms-transition: transform 0.3s ease, opacity 0.3s ease,
-			background-color 0.3s ease;
-		-o-transition: transform 0.3s ease, opacity 0.3s ease,
+		transition:
+			transform 0.3s ease,
+			opacity 0.3s ease,
 			background-color 0.3s ease;
 	}
 
